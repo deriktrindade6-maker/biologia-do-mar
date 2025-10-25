@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biologia Marinha 🌀</title>
+  <style>
+    body { 
+      margin:0; 
+      font-family:Arial,sans-serif; 
+      background:#001f3f; /* Fundo azul escuro */
+      color:#ffffff; 
+    }
+    header { text-align:center; padding:50px 10px; }
+    section { 
+      max-width:900px; 
+      margin:50px auto; 
+      padding:30px; 
+      background:rgba(255,255,255,0.9); 
+      color:#00334e; 
+      border-radius:15px; 
+      box-shadow:0 0 15px rgba(0,0,0,0.2); 
+      opacity:0; 
+      transform:translateY(30px); 
+      transition:all 1s ease-out; 
+    }
+    h2 { color:#0077b6; margin-bottom:15px; }
+    p, ul li { line-height:1.6; margin-bottom:10px; }
+    .show { opacity:1 !important; transform:translateY(0) !important; }
+    footer { text-align:center; padding:20px; background-color:rgba(0,119,182,0.9); color:white; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biologia Marinha 🌀</h1>
+    <p>Feira de Ciências - Preservando a vida nos oceanos</p>
+  </header>
+
+  <section>
+    <h2>Lixo nos Mares</h2>
+    <p>Mais de 8 milhões de toneladas de plástico são despejadas nos oceanos todos os anos, afetando profundamente os ecossistemas marinhos.</p>
+  </section>
+
+  <section>
+    <h2>Tartarugas Marinhas</h2>
+    <p>As tartarugas muitas vezes confundem plásticos com alimento, sofrendo consequências graves.</p>
+  </section>
+
+  <section>
+    <h2>Dicas de Sustentabilidade</h2>
+    <ul>
+      <li>Use garrafas reutilizáveis.</li>
+      <li>Recicle corretamente.</li>
+      <li>Participe de limpezas de praias.</li>
+      <li>Compartilhe informações sobre a importância dos oceanos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Animais Marinhos</h2>
+    <ul>
+      <li>Tartaruga 🐢</li>
+      <li>Golfinho 🐬</li>
+      <li>Tubarão 🦈</li>
+      <li>Peixe-palhaço 🐠</li>
+      <li>Polvo 🐙</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Curiosidades</h2>
+    <p>🌍 Os oceanos cobrem 70% da Terra.<br>
+       💨 Produzem mais de 50% do oxigênio.<br>
+       🌊 Fossa das Marianas chega a 11 km de profundidade.</p>
+  </section>
+
+  <footer>
+    <p>Feito por Derik 🌀 | Feira de Ciências 2025</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('header h1, header p, section');
+    function fadeInOnScroll() {
+      fadeElements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 50) el.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', fadeInOnScroll);
+    window.addEventListener('load', fadeInOnScroll);
+  </script>
+</body>
+</html>
